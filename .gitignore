@@ -1,0 +1,11 @@
+# Project exclude paths
+/common-api/target/
+/gateway/target/
+/helperpro/target/
+/my-redis-spring-boot-starter/target/
+/order-service-api/target/
+/order-service-provider/target/
+/startertestdemo/target/
+/user-service-api/target/
+/user-service-provider/target/
+/website-service/target/

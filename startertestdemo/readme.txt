@@ -1,0 +1,1 @@
+使用自定义的springboot starter jar---->my-redis-spring-boot-starter
