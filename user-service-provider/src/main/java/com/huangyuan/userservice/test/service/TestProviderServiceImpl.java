@@ -1,5 +1,6 @@
-package com.huangyuan.userservice.test;
+package com.huangyuan.userservice.test.service;
 
+import com.huangyuan.userservice.test.TestProviderService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -24,7 +25,7 @@ import org.springframework.beans.factory.annotation.Value;
  * consistentHash 一致性哈希，相同参数的请求始终找到同一个服务提供者
  */
 @Service(cluster = "failover",retries = 2,loadbalance = "random")
-public class TestProviderServiceImpl implements TestProviderService{
+public class TestProviderServiceImpl implements TestProviderService {
 
     @Value("${spring.application.name}")
     private String applicationName;

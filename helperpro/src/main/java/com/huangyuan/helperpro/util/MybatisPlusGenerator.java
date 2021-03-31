@@ -12,7 +12,7 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 public class MybatisPlusGenerator {
     //要生成的表名
     public static String[] genTablesName= new String[]{
-            "t_user"
+            "t_role"
     };
     public static void runMybatisPlusGenerator() {
         AutoGenerator autoGenerator = new AutoGenerator();

@@ -2,6 +2,7 @@ package com.huangyuan.userservice.modules.user.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.huangyuan.common.hyexception.HyException;
 import com.huangyuan.userservice.modules.user.entity.TUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.huangyuan.userservice.modules.user.entity.TUserExt;
@@ -19,4 +20,6 @@ public interface TUserService extends IService<TUser> {
     IPage<TUser> listByPage(Page<TUser> page, TUser condition);
 
     IPage<TUserExt> listExtByPage(Page<TUserExt> page, TUserExt condition);
+
+    void insert(TUser user);
 }

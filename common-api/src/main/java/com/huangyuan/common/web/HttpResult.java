@@ -49,6 +49,10 @@ public class HttpResult<T> {
         return new HttpResult<T>(data);
     }
 
+    public static HttpResult success(){
+        return HttpResult.success(null);
+    }
+
     public Integer getCode() {
         return code;
     }
